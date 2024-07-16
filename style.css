@@ -1,5 +1,48 @@
 .bg-custom-color {
-    background-color: rgb(248, 247, 244) !important
+    background-color: rgb(248, 247, 244) !important;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: 500;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav ul li {
+    margin-right: 32px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: #000;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin-left: 60px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
 }
 
 .search-bar {
@@ -31,6 +74,7 @@
     width: 100%;
     transition: background-color 0.3s ease;
 }
+
 .signup-btn:hover {
     background-color: #808080; 
     color: white;
@@ -43,18 +87,18 @@
     justify-content: center; 
     padding: 10px 25px; 
 }
-.button{
+
+.button {
     display: flex;
     gap: 8px;
 }
 
-.form{
+.form {
+    display: flex;
+    align-items: center;
     gap: 4px;
 }
-.logo {
-    margin: auto; /* Center the logo */
-    display: block; /* Ensures margin: auto works properly */
-}
+
 
 .home-container{
     display: flex;
