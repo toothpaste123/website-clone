@@ -66,7 +66,6 @@ h1{
     line-height: 56px;
 }
 .hero-heading {
-    
 max-width: 340px;
 margin: 40px auto 24px;
 font-family: "Source Serif 4", Georgia, serif;
@@ -86,20 +85,22 @@ line-height: 56px;
 
 
 .home-letter {
+    max-width: 382px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    margin: auto; /* Center the text horizontally */
+}
+@media(min-width: 768px){
+    .home-letter{
+    max-width: 870px;
     font-size: 20px;
     line-height: 32px;
     text-align: center;
     font-weight: 500;
-
-    /* Media query for smaller screens */
-    @media (max-width: 768px) {
-        max-width: 382px;
-        font-size: 18px;
-        line-height: 32px;
-        font-weight: 500;
-        margin: auto; /* Center the text horizontally */
     }
 }
+
 .getstart-btn{
     display: inline-flex;
     justify-content: center;
