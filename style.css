@@ -9,6 +9,8 @@
     height: 50px;
     line-height: 1;
     flex-grow: 1;
+    background: url('assets/img/search-icon.png') no-repeat left 16px center;
+    background-size: 20px; /* Adjust the size of the icon */
 }
 
 .login-btn {
@@ -40,7 +42,7 @@
 }
 
 .form{
-    gap: 24px;
+    gap: 4px;
 }
 .logo {
     margin: auto; /* Center the logo */
