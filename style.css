@@ -1,9 +1,5 @@
-body{
-    background-color: rgba(255, 218, 121, 1) ;
-}
-
 .bg-custom-color {
-    background-color: rgba(255, 218, 121, 0.2)  !important
+    background-color: white !important
 }
 
 .search-bar {
@@ -32,4 +28,26 @@ body{
 .logo {
     margin: auto; /* Center the logo */
     display: block; /* Ensures margin: auto works properly */
+}
+
+.home-container{
+    margin-top: 120px;
+}
+.badge-container{
+    background-color: #ffda79; 
+    letter-spacing: -0.2px;
+    line-height: 1;
+    padding: 10px 16px;
+    align-items: center; 
+    margin: auto; 
+    width: fit-content; 
+    letter-spacing: -0.2px;
+    display: flex; 
+    border-radius: 1e+07px;
+}
+.creative-box {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 16px;
+    font-weight: 600;
+    
 }
