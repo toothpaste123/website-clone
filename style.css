@@ -44,10 +44,23 @@
     letter-spacing: -0.2px;
     display: flex; 
     border-radius: 1e+07px;
-}
-.creative-box {
     font-family: "Source Serif 4", Georgia, serif;
     font-size: 16px;
     font-weight: 600;
+}
+.hero-heading {
+    text-align: center;
+    font-size: 72px;
+    line-height: 76px;
+    margin: 40px auto 24px;
+    max-width: 870px;
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 400;
     
+
+    /* Media query for smaller screens */
+    @media (max-width: 767px) {
+        max-width: 340px;
+        font-size: 36px;
+    }
 }
