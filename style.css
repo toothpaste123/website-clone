@@ -6,10 +6,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    padding-top: 24px;
-    padding-left: 40px;
-    padding-right: 40px;
     font-weight: 500;
     font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -24,7 +20,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 32px;
+    margin-right: 24px;
     
 }
 
