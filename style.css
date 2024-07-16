@@ -16,6 +16,7 @@
     border: none;
     padding: 0;
     font-size: 1rem;
+    width: 100%;
 }
 
 .signup-btn {
@@ -23,8 +24,24 @@
     color: #fff;
     border-radius: 25px;
     padding: 0 15px;
+    width: 100%;
 }
 
+.btn {
+    white-space: nowrap; 
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px 25px; 
+}
+.button{
+    display: flex;
+    gap: 8px;
+}
+
+.form{
+    gap: 24px;
+}
 .logo {
     margin: auto; /* Center the logo */
     display: block; /* Ensures margin: auto works properly */
