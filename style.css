@@ -331,9 +331,10 @@ h1 {
 .tag {
     background-color: transparent;
     border: 1px solid #dadada;
-    font-size: 10px;
+    font-size: 11px;
     padding: 8px 10px;
     border-radius: 50px;
+    font-weight: bold;
 }
 
 .scroll {
@@ -343,7 +344,7 @@ h1 {
     white-space: no;
     padding-bottom: 20px; 
     position: relative;
-    animation: slide 20s linear infinite;
+    animation: slide 50s linear infinite;
     white-space: nowrap;
     flex: 1;
 }
@@ -356,6 +357,9 @@ h1 {
 
     .scroll {
         gap: 15px;
+    }
+    .tag-list{
+        padding: 9 24px;
     }
 }
 
