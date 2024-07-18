@@ -423,7 +423,111 @@ h2{
     }
 }
 
-.thumb-img{
-    border-radius: 32px;
-    width: 500px;
+.thumbnail-container{
+    display: inline-block;
+    text-align: start !important
+}
+.thumbnail-img{
+    border-radius: 8px;
+    height: 312px;
+    width: 417px;
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image horizontally within the container */
+
+}
+
+.display_name{
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -ms-flex: 1;
+    flex: 1;
+    color: #0d0c22;
+}
+
+.display-picture{
+    width: 20px;
+    border-radius: 999px;
+}
+
+.displayNameAndPicture{
+    padding-top: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.thumbnail-badge{
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 4px 5px;
+    border-radius: 3px;
+    background: rgb(204, 204, 204);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.thumbnail-badge:hover {
+    background-color: #000;
+    color: white;
+}
+
+.thumbnail-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.interact{
+    float: right;
+    margin-left: auto;
+    align-items: center;
+}
+
+.heart-icon {
+    
+    color: #7e7e7e; /* Grey color for the heart icon */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.heart-icon:hover {
+    color: red; /* Red color on hover */
+}
+
+.likes-counter{
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -ms-flex: 1;
+    flex: 1;
+    color: #7e7e7e;
+}
+.eye-icon{
+    color: #7e7e7e
+}
+
+.views-counter{
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -ms-flex: 1;
+    flex: 1;
+    color: #7e7e7e;
 }
