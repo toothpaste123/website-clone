@@ -309,6 +309,8 @@ h1 {
     right: 0;
     padding: 10px;
     color: white;
+    z-index: 2; /* Ensure it stays above the overlay */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Add a subtle shadow to the text */
 }
 
 .card-title h4 {
@@ -336,6 +338,20 @@ h1 {
     border-radius: 50px;
     font-weight: bold;
 }
+
+.card::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px; /* Adjust this value as needed */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* Gradient from dark to transparent */
+    z-index: 1; /* Ensure it stays below the content */
+    border-bottom-left-radius: 32px; /* Match the card's border radius */
+    border-bottom-right-radius: 32px; /* Match the card's border radius */
+}
+
 
 .scroll {
     display: inline-flex;
