@@ -143,7 +143,7 @@ nav a {
 }
 
 .small-signup-btn {
-    background-color: #000;
+    background-color: #0d0c22;
     color: #fff;
     border-radius: 25px;
     padding: 0 25px;
@@ -153,7 +153,7 @@ nav a {
 }
 
 .signup-btn {
-    background-color: #000;
+    background-color: #0d0c22;
     color: #fff;
     border-radius: 25px;
     padding: 0 15px;
@@ -213,9 +213,10 @@ nav a {
     position: relative;
     padding-top: 80px;
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     background-color: rgb(248, 247, 244);
 }
+
 
 h1 {
     display: block;
@@ -268,7 +269,7 @@ h1 {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #0d0c22;
     color: white;
     text-decoration: none;
     height: 56px;
@@ -334,7 +335,7 @@ h1 {
     background-color: transparent;
     border: 1px solid #dadada;
     font-size: 11px;
-    padding: 8px 10px;
+    padding: 5px 8px;
     border-radius: 50px;
     font-weight: bold;
 }
@@ -345,11 +346,11 @@ h1 {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 150px; /* Adjust this value as needed */
+    height: 150px; 
     background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* Gradient from dark to transparent */
-    z-index: 1; /* Ensure it stays below the content */
-    border-bottom-left-radius: 32px; /* Match the card's border radius */
-    border-bottom-right-radius: 32px; /* Match the card's border radius */
+    z-index: 1;
+    border-bottom-left-radius: 32px; 
+    border-bottom-right-radius: 32px; 
 }
 
 
