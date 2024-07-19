@@ -10,7 +10,7 @@ nav {
     font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: black;
-    
+
 }
 
 nav ul {
@@ -50,9 +50,10 @@ nav a {
     margin-left: 24px;
 }
 
-.img-container-small{
+.img-container-small {
     margin-right: 24px;
 }
+
 @media (max-width: 991.98px) {
     .img-container-small {
         display: none !important;
@@ -82,11 +83,14 @@ nav a {
 }
 
 @media (max-width: 991.98px) {
+
     .search-icon-link,
     .button {
-      display: none; /* Hide search icon and buttons for login/signup on smaller screens */
+        display: none;
+        /* Hide search icon and buttons for login/signup on smaller screens */
     }
-  }
+}
+
 @media (min-width: 1094px) {
     .search-icon-link {
         display: none !important;
@@ -120,19 +124,24 @@ nav a {
 .small-form-container {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Align items to the rightmost side */
-    position: absolute; /* Position absolutely relative to the viewport */
+    justify-content: flex-end;
+    /* Align items to the rightmost side */
+    position: absolute;
+    /* Position absolutely relative to the viewport */
     top: 0;
     right: 0;
-    margin-top: 16px; /* Adjust margin as needed */
-    margin-right: 10px; /* Adjust margin as needed */
-  }
-  
-  @media (min-width: 992px) {
+    margin-top: 16px;
+    /* Adjust margin as needed */
+    margin-right: 10px;
+    /* Adjust margin as needed */
+}
+
+@media (min-width: 992px) {
     .small-form-container {
-      display: none; /* Hide on larger screens */
+        display: none;
+        /* Hide on larger screens */
     }
-  }
+}
 
 .login-btn {
     background-color: transparent;
@@ -292,14 +301,14 @@ h1 {
 
 .card {
     position: relative;
-    width: 273px; /* Fixed width */
-    height: 340px; /* Fixed height */
+    width: 273px;
+    height: 340px;
     background-size: cover;
     background-position: center;
     border-radius: 32px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex-shrink: 0; /* Prevent the card from shrinking */
+    flex-shrink: 0;
     box-sizing: border-box;
 }
 
@@ -310,8 +319,8 @@ h1 {
     right: 0;
     padding: 10px;
     color: white;
-    z-index: 2; /* Ensure it stays above the overlay */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Add a subtle shadow to the text */
+    z-index: 2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .card-title h4 {
@@ -346,14 +355,15 @@ h1 {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 150px; 
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* Gradient from dark to transparent */
+    height: 150px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    /* Gradient from dark to transparent */
     z-index: 1;
-    border-bottom-left-radius: 32px; 
-    border-bottom-right-radius: 32px; 
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
 }
 
-.video{
+.video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -365,7 +375,7 @@ h1 {
     gap: 20px;
     padding: 0 10px;
     white-space: no;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
     position: relative;
     animation: slide 50s linear infinite;
     white-space: nowrap;
@@ -381,27 +391,29 @@ h1 {
     .scroll {
         gap: 15px;
     }
-    .tag-list{
+
+    .tag-list {
         padding: 9 24px;
     }
 }
 
 @keyframes slide {
-   from{
-    transform: translateX(0);
-   }
-   to{
-    transform: translateX(-100%);
-   }
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
 
-.home-feed{
+.home-feed {
     margin-top: 72px;
     text-align: center;
     margin-bottom: 150px;
 }
 
-.home-feed-heading{
+.home-feed-heading {
     display: block;
     margin-bottom: 48px;
     font-size: 35px;
@@ -409,10 +421,10 @@ h1 {
     line-height: 41px;
     text-align: center;
     padding: 0 24px;
-    
+
 }
 
-h2{
+h2 {
     font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -426,19 +438,23 @@ h2{
 
 .thumbnail-container {
     text-align: start !important;
-  }
-  
-  .thumbnail-img {
+    
+}
+
+.thumbnail-img {
     border-radius: 8px;
     height: auto;
     width: 100%;
     max-width: 100%;
-    aspect-ratio: 417 / 312; /* Maintain the aspect ratio */
-    display: block; /* Make the image a block element */
-    margin: 0 auto; /* Center the image horizontally within the container */
-  }
-  
-  .display_name {
+    aspect-ratio: 417 / 312;
+    /* Maintain the aspect ratio */
+    display: block;
+    /* Make the image a block element */
+    margin: 0 auto;
+    /* Center the image horizontally within the container */
+}
+
+.display_name {
     font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: 500;
@@ -449,23 +465,22 @@ h2{
     -ms-flex: 1;
     flex: 1;
     color: #0d0c22;
-  }
-  
-  .display-picture {
+}
+
+.display-picture {
     width: 20px;
     border-radius: 999px;
-  }
-  
-  .displayNameAndPicture {
-    padding-top: 8px;
+}
+
+.displayNameAndPicture {
     display: inline-flex;
     align-items: center;
     gap: 8px;
     display: flex;
     align-items: center;
-  }
-  
-  .thumbnail-badge {
+}
+
+.thumbnail-badge {
     color: rgb(255, 255, 255);
     font-size: 10px;
     font-weight: bold;
@@ -476,35 +491,35 @@ h2{
     background: rgb(204, 204, 204);
     text-decoration: none;
     transition: background-color 0.3s ease;
-  }
-  
-  .thumbnail-badge:hover {
+}
+
+.thumbnail-badge:hover {
     background-color: #000;
     color: white;
-  }
-  
-  .thumbnail-info {
+}
+
+.thumbnail-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  .interact {
+}
+
+.interact {
     float: right;
     margin-left: auto;
     align-items: center;
-  }
-  
-  .heart-icon {
-    color: #7e7e7e; /* Grey color for the heart icon */
-    transition: color 0.3s ease; /* Smooth transition for color change */
-  }
-  
-  .heart-icon:hover {
-    color: red; /* Red color on hover */
-  }
-  
-  .likes-counter {
+}
+
+.heart-icon {
+    color: #7e7e7e;
+    transition: color 0.3s ease;
+}
+
+.heart-icon:hover {
+    color: red;
+}
+
+.likes-counter {
     font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 13px;
     font-weight: 500;
@@ -515,13 +530,13 @@ h2{
     -ms-flex: 1;
     flex: 1;
     color: #7e7e7e;
-  }
-  
-  .eye-icon {
+}
+
+.eye-icon {
     color: #7e7e7e;
-  }
-  
-  .views-counter {
+}
+
+.views-counter {
     font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 13px;
     font-weight: 500;
@@ -532,26 +547,90 @@ h2{
     -ms-flex: 1;
     flex: 1;
     color: #7e7e7e;
+}
+
+
+  .thumbnail-overlay {
+    position: relative;
+    display: inline-block;
   }
   
-  .custom-container {
+  .thumbnail-img {
+    width: 100%;
+    display: block;
+  }
+  
+  .overlay-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* Gradient overlay */
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .thumbnail-overlay:hover .overlay-content {
+    opacity: 1;
+  }
+  
+  .thumbnail-name {
+    font-size: 1.2em;
+    margin-right: auto; /* Pushes name to the left */
+  }
+  
+  .overlay-buttons {
+    display: flex;
+    gap: 10px; 
+    align-items: center; 
+  }
+  
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    background-color: white; 
+    font-size: 1.5em; 
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bookmark-icon{
+    color: grey;
+    transition: color 0.3s ease;
+  }
+
+  .bookmark-icon:hover{
+    color: black;
+  }
+.custom-container {
     padding: 0 72px;
-  }
-  
-  @media (min-width: 765px) and (max-width: 1190px) {
+}
+
+@media (min-width: 765px) and (max-width: 1190px) {
     .custom-container {
-      padding-left: 32px;
-      padding-right: 32px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
-  }
-  @media (max-width: 764px){
-    .custom-container{
+}
+
+@media (max-width: 764px) {
+    .custom-container {
         padding-left: 20px;
         padding-right: 20px;
     }
-  }
+}
 
-  .browse-button{
+.browse-button {
     background-color: #ffffff;
     color: #000000;
     border-radius: 25px;
@@ -559,4 +638,4 @@ h2{
     width: 260px;
     height: 52px;
     font-weight: 500;
-  }
+}
