@@ -735,12 +735,11 @@ h2 {
     font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.footer-card{
+.footer-card {
     position: relative;
     z-index: 2;
     margin: 0 auto;
     padding-top: 60px;
-    padding-inline: 24px;
     overflow: hidden;
     overflow-x: scroll;
 }
@@ -752,8 +751,8 @@ h2 {
 
 .footer-card-container {
     position: relative;
-    width: 200px; /* Adjusted to fit the image width */
-    height: 150px; /* Adjusted to fit the image height and overlap */
+    width: 200px; 
+    height: 150px; 
     margin-bottom: 20px;
 }
 
@@ -763,31 +762,59 @@ h2 {
     height: 100%;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, left 0.3s ease; /* Faster size change */
 }
 
 .div1 {
     z-index: 3;
+    position: relative;
+}
+
+.div2, .div3 {
+    transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, left 0.3s ease;
 }
 
 .div2 {
     top: -5px;
     left: 5px;
-    z-index: 2;
+    z-index: 1; 
     border-color: white;
     border: 2px solid #fff;
+    transition-delay: 0.05s; 
 }
 
 .div3 {
     top: -10px;
     left: 10px;
-    z-index: 1;
+    z-index: 0; 
     border-color: white;
     border: 2px solid #fff;
+    transition-delay: 0.1s; 
 }
 
+.div1:hover ~ .div2 {
+    width: calc(100% + 3px); 
+    height: calc(100% + 3px); 
+    top: calc(-5px - 3px); 
+    transition-delay: 0s; 
+}
+
+.div1:hover ~ .div3 {
+    width: calc(100% + 6px); 
+    height: calc(100% + 6px); 
+    top: calc(-10px - 6px); 
+    transition-delay: 0.05s; 
+}
+
+.div1:not(:hover) ~ .div3 {
+    transition-delay: 0s; 
+}
+
+.div1:not(:hover) ~ .div2 {
+    transition-delay: 0.05s; 
+}
 .card-item-title {
-    text-align: center;
+    text-align: start;
     margin-top: 10px;
     font-size: 16px;
 }
@@ -795,4 +822,32 @@ h2 {
 .footer-img{
     border-radius: 8px;
     border: 2px solid #fff;
+}
+
+.footer-slide{
+    display: flex;
+    gap: 32px;
+    overflow: hidden;
+    animation: 20s slide infinite linear;
+    padding: 16px 8px;
+    transition: animation-duration 0.5s ease-out;
+}
+
+.footer-card-holder:hover .footer-slide{
+    animation-play-state: paused;
+    
+}
+
+@keyframes f-slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%)
+    }
+}
+
+.footer-card-holder{
+    display: inline-flex;
+    gap: 18px;
 }
