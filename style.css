@@ -651,6 +651,7 @@ h2 {
     text-align: center;
     background-color: #ffda79;
     padding: 120px 0;
+    display: block;
 }
 
 .main-footer-content{
@@ -697,9 +698,12 @@ h2 {
 }
 
 .footer-buttons{
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     justify-content: center;
-    gap: 24px;
+    padding: 16px 0px 24px;
+    gap: 16px;
+
 }
 
 .footer-btn{
@@ -709,6 +713,13 @@ h2 {
     padding: 15px 15px;
     width: 170px;
     text-decoration: none;
+}
+
+@media (max-width: 400px){
+    .footer-buttons{
+        grid-auto-flow: row;
+        justify-items: center;
+    }
 }
 
 .white{
