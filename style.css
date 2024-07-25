@@ -406,6 +406,10 @@ h1 {
     }
 }
 
+.card-container:hover .scroll{
+    animation-play-state: paused;
+}
+
 @keyframes slide {
     from {
         transform: translateX(0);
